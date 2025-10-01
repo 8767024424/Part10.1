@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviewed Repositories List</title>
+    <style>
+        /* General Body and Page Layout */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #24292e;
+        }
+
+        /* App Bar Styling (AppBar component equivalent) */
+        .app-bar {
+            background-color: #24292e;
+            color: white;
+            padding-top: 40px; /* Simulate Constants.statusBarHeight */
+            padding-bottom: 15px;
+            padding-left: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        /* App Bar Tab Styling */
+        .app-bar-tab {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none; /* No underline for link */
+            /* This is a visual representation of a "Pressable" component. */
+            cursor: pointer;
+            user-select: none;
+            padding: 5px 10px;
+        }
+
+        /* Main Content Container */
+        .main-content {
+            padding: 20px;
+        }
+
+        /* Repository List and Item Styling (from previous exercise) */
+        .repository-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .item-header {
+            margin-bottom: 10px;
+        }
+        .full-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .description {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .language-tag {
+            display: inline-block;
+            background-color: #0366d6;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            margin-top: 15px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .stat-label {
+            color: #777;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- App Bar -->
+    <header class="app-bar">
+        <span class="app-bar-tab">Repositories</span>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h2>Reviewed Repositories</h2>
+        
+        <!-- Repository Item 1: jaredpalmer/formik -->
+        <div class="repository-item">
+            <div class="item-header">
+                <div class="full-name">jaredpalmer/formik</div>
+                <div class="description">Build forms in React, without the tears</div>
+                <div class="language-tag">TypeScript</div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-value">21553</div>
+                    <div class="stat-label">Stars</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1589</div>
+                    <div class="stat-label">Forks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">88</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">Reviews</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repository Item 2: rails/rails -->
+        <div class="repository-item">
+            <div class="item-header">
+                <div class="full-name">rails/rails</div>
+                <div class="description">Ruby on Rails</div>
+                <div class="language-tag">Ruby</div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-value">45377</div>
+                    <div class="stat-label">Stars</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">18349</div>
+                    <div class="stat-label">Forks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Reviews</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Repository Item 3: django/django -->
+        <div class="repository-item">
+            <div class="item-header">
+                <div class="full-name">django/django</div>
+                <div class="description">The Web framework for perfectionists with deadlines.</div>
+                <div class="language-tag">Python</div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-value">48496</div>
+                    <div class="stat-label">Stars</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">21015</div>
+                    <div class="stat-label">Forks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">73</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Reviews</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repository Item 4: reduxjs/redux -->
+        <div class="repository-item">
+            <div class="item-header">
+                <div class="full-name">reduxjs/redux</div>
+                <div class="description">Predictable state container for JavaScript apps</div>
+                <div class="language-tag">TypeScript</div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-value">52869</div>
+                    <div class="stat-label">Stars</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">13902</div>
+                    <div class="stat-label">Forks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Reviews</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
